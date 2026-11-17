@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pix Hotel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=DM+Sans:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <a class="brand" href="#home">Pix <span>Hotel</span></a>
+    <nav aria-label="Main" id="nav">
+      <a href="#home" data-v="home">Home</a>
+      <a href="#rooms" data-v="rooms">Rooms</a>
+      <a href="#menu" data-v="menu">Menu</a>
+      <a href="#about" data-v="about">About us</a>
+      <a href="#contact" data-v="contact">Contact</a>
+      <a class="btn small" href="#book">Book now</a>
+    </nav>
+  </div>
+
+  <main id="main"></main>
+
+  <section class="auth-section" aria-label="Account access">
+    <div class="auth-container" id="authContainer">
+      <div class="auth-form-container auth-sign-up-container">
+        <form action="#" aria-label="Create account">
+          <h1>Sign Up</h1>
+          <div class="auth-infield">
+            <input type="text" placeholder="Username" required>
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <div class="auth-infield">
+            <input type="email" placeholder="Email" required>
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+          <div class="auth-infield">
+            <input type="password" placeholder="Password" required>
+            <i class="fa-solid fa-lock"></i>
+          </div>
+          <button type="submit">Sign Up</button>
+          <p class="auth-switch-text">Already have an account? <span id="toLogin">Login</span></p>
+        </form>
+      </div>
+
+      <div class="auth-form-container auth-log-in-container">
+        <form action="#" aria-label="Login to account">
+          <h1>Login</h1>
+          <div class="auth-infield">
+            <input type="text" placeholder="Username" required>
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <div class="auth-infield">
+            <input type="password" placeholder="Password" required>
+            <i class="fa-solid fa-lock"></i>
+          </div>
+          <button type="submit">Login</button>
+          <p class="auth-switch-text">Don't have an account? <span id="toSignUp">Sign Up</span></p>
+        </form>
+      </div>
+
+      <div class="auth-overlay-container">
+        <div class="auth-overlay">
+          <div class="auth-overlay-panel auth-overlay-left">
+            <h1>WELCOME BACK!</h1>
+            <p>Thank you.</p>
+          </div>
+          <div class="auth-overlay-panel auth-overlay-right">
+            <h1>WELCOME BACK!</h1>
+            <p>Thank you.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div><strong>Pix Hotel</strong><br>Westlands, Nairobi</div>
+    <div>+254 700 000 000<br>hello@pixhotel.example</div>
+    <div>Check-in from 2:00 pm<br>Check-out by 10:00 am</div>
+    <p class="fine">Prototype with example rooms, menu and prices. Photos you add here show only in this preview. In the Django project, upload permanent photos in the admin.</p>
+  </footer>
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>
